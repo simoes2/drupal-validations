@@ -32,6 +32,7 @@ function validateConfigEntities() {
       }
     }
   }
+   print "\n\rNumber of entities validated: " . $count_entities . "\n\r";
    if($msg && $errors){
     print "\n\rNumber of entities validated: " . $count_entities;
     print "\n\rNumber of entities with validation errors: " . $errors . " (". implode(" , ", $invalid_entities) . ")";
